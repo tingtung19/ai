@@ -5,7 +5,7 @@
   class="light-style layout-menu-fixed layout-compact"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="/admin/assets/"
+  data-assets-path="admin/assets/"
   data-template="vertical-menu-template-free"
   data-style="light">
   <?php include ("admin/layout/header-meta.php") ;?>
@@ -43,7 +43,7 @@
                       <a href="javascript:;" class="btn btn-sm btn-primary">Lihat Laporan</a>
                     </div>
                     <img
-                      src="/admin/assets/img/illustrations/trophy.png"
+                      src="admin/assets/img/illustrations/trophy.png"
                       class="position-absolute bottom-0 end-0 me-5 mb-5"
                       width="83"
                       alt="view sales" />

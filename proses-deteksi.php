@@ -5,7 +5,7 @@
   class="light-style layout-menu-fixed layout-compact"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="/admin/assets/"
+  data-assets-path="admin/assets/"
   data-template="vertical-menu-template-free"
   data-style="light">
   <?php include ("admin/layout/header-meta.php") ;?>

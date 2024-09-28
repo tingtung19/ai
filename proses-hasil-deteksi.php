@@ -5,7 +5,7 @@
   class="light-style layout-menu-fixed layout-compact"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="/admin/assets/"
+  data-assets-path="admin/assets/"
   data-template="vertical-menu-template-free"
   data-style="light">
   <?php include ("admin/layout/header-meta.php") ;?>
@@ -57,9 +57,9 @@
                       <label class="col-sm-2 form-label" for="basic-icon-default-message">Gambar USG</label>
                       <div class="col-sm-10">
                           <div class="d-flex align-items-start align-items-sm-center gap-4">
-                            <img src="/admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
-                            <img src="/admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
-                            <img src="/admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
+                            <img src="admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
+                            <img src="admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
+                            <img src="admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
                           </div>
 
                       </div>
