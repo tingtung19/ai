@@ -36,11 +36,11 @@
                 <div class="col-md-12 col-lg-12">
                   <div class="card">
                     <div class="card-body text-nowrap">
-                      <h5 class="card-title mb-0 flex-wrap text-nowrap">Selamat Datang Norris! 🎉</h5>
-                      <p class="mb-2">Total Pengecekan</p>
+                      <h5 class="card-title mb-0 flex-wrap text-nowrap">Welcome Datang Admin! 🎉</h5>
+                      <p class="mb-2">Total Check</p>
                       <h4 class="text-primary mb-0">42</h4>
-                      <p class="mb-2">78% tingkat akurasi 🚀</p>
-                      <a href="javascript:;" class="btn btn-sm btn-primary">Lihat Laporan</a>
+                      <p class="mb-2">78% accuracy rate 🚀</p>
+                      <a href="javascript:;" class="btn btn-sm btn-primary">View Report</a>
                     </div>
                     <img
                       src="admin/assets/img/illustrations/trophy.png"

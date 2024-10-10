@@ -31,37 +31,48 @@
             <!-- Content -->
 
             <div class="card">
-                <h5 class="card-header">Laporan Hasil Deteksi Pasien</h5>
+                <h5 class="card-header">Patient Detection Result Report</h5>
                 <div class="table-responsive text-nowrap">
                   <table class="table">
                     <thead class="table-dark">
                       <tr>
-                        <th>ID Pasien</th>
-                        <th>Nama Pasien</th>
-                        <th>Gambar USG</th>
-                        <th>Hasil</th>
+                        <th> Patient ID</th>
+                        <th> Patient Name</th>
+                        <th> USG Images</th>
+                        <th> Result KGS</th>
+                        <th> Result CNN</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                         <?php for ($i=0; $i < 5 ; $i++)  : ?>
                         <tr>
                             <td>18973839845</td>
-                            <td>Nama Pasien A</td>
+                            <td>Patient Name A</td>
                             <td>
                             <ul class="list-unstyled m-0 avatar-group d-flex align-items-center">
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="Lilian Fuller" data-bs-original-title="Lilian Fuller">
+                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="USG Front View" data-bs-original-title="USG Front View">
                               <img src="admin/assets/img/avatars/5.png" alt="Avatar" class="rounded-circle">
                             </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="Sophia Wilkerson" data-bs-original-title="Sophia Wilkerson">
+                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="USG Side View" data-bs-original-title="USG Side View">
                               <img src="admin/assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
                             </li>
-                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="Christina Parker" data-bs-original-title="Christina Parker">
-                              <img src="admin/assets/img/avatars/7.png" alt="Avatar" class="rounded-circle">
-                            </li>
+                          
                           </ul>
                             </td>
                             <td>
                               <?php $hasil = rand(1,3);?>
+                              <?php if($hasil==1) : ?>
+                                <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Kanker Tidak Terdeteksi</button>
+                              <?php elseif($hasil==2) : ?>
+                                <button type="button" class="btn rounded-pill btn-warning waves-effect waves-light">Kanker Jinak</button>
+                              <?php elseif($hasil==3) : ?>
+                                <button type="button" class="btn rounded-pill btn-danger waves-effect waves-light">Kanker Ganas</button>
+                              <?php endif; ?>
+
+                            </td>
+
+                            <td>
+                              <?php $hasil = isset($_GET['rand']) ?  rand(1,3) : $hasil ;?>
                               <?php if($hasil==1) : ?>
                                 <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Kanker Tidak Terdeteksi</button>
                               <?php elseif($hasil==2) : ?>

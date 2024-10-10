@@ -39,25 +39,31 @@
                 <div class="card-body">
                   <form  action="hasil-deteksi.php" method="post" enctype="multipart/form-data">
                     <div class="row mb-4">
-                      <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Nama Pasien</label>
+                      <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Patient Name</label>
                       <div class="col-sm-10">                        
-                          <input type="text" id="basic-icon-default-phone" class="form-control phone-mask" value="Nama Pasien" aria-describedby="basic-icon-default-phone2" disabled>                   
+                          <input type="text" id="basic-icon-default-phone" class="form-control phone-mask" value="Patient Name" aria-describedby="basic-icon-default-phone2" disabled>                   
                       </div>
                     </div>
 
 
-                    <div class="row mb-4">
-                      <label class="col-sm-2 form-label" for="basic-icon-default-message">Tambahan Gejala yang dialami pasien</label>
-                      <div class="col-sm-10">                      
-                          <textarea id="basic-icon-default-message" class="form-control" placeholder="Gejala Pasien" aria-label="Gejala Pasien" aria-describedby="basic-icon-default-message2"></textarea>                     
+                    <div class="row mb-4">        
+                      <label class="col-sm-2 form-label">Symptoms of patient</label>
+                      <div class="col-sm-10">
+                        
+                          <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">Symptoms patient a</li>
+                            <li class="list-group-item">Symptoms patient b</li>
+                            <li class="list-group-item">Symptoms patient c</li>
+                            <li class="list-group-item">Symptoms patient d</li>
+                            <li class="list-group-item">Symptoms patient e</li>
+                          </ol>
                       </div>
-                    </div>
+                    </div>    
 
                     <div class="row mb-4">
-                      <label class="col-sm-2 form-label" for="basic-icon-default-message">Gambar USG</label>
+                      <label class="col-sm-2 form-label" for="basic-icon-default-fullname">USG Images</label>
                       <div class="col-sm-10">
                           <div class="d-flex align-items-start align-items-sm-center gap-4">
-                            <img src="admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
                             <img src="admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
                             <img src="admin/assets/img/avatars/1.png" alt="user-avatar" class="d-block w-px-100 h-px-100 rounded" id="uploadedAvatar">                          
                           </div>
@@ -66,16 +72,32 @@
                     </div>
 
                     <div class="row mb-4">
-                      <label class="col-sm-2 form-label" for="basic-icon-default-message">Hasil Scan</label>
+                      <label class="col-sm-2 form-label" for="basic-icon-default-message"> Detection Result by KGS</label>
                       <div class="col-sm-10">
                           <div class="d-flex align-items-start align-items-sm-center gap-4">
                             <?php $hasil = rand(1,3);?>
                             <?php if($hasil==1) : ?>
-                              <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Kanker Tidak Terdeteksi</button>
+                              <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Undetected Cancer</button>
                             <?php elseif($hasil==2) : ?>
-                              <button type="button" class="btn rounded-pill btn-warning waves-effect waves-light">Kanker Jinak</button>
+                              <button type="button" class="btn rounded-pill btn-warning waves-effect waves-light">Benign Cancer</button>
                             <?php elseif($hasil==3) : ?>
-                              <button type="button" class="btn rounded-pill btn-danger waves-effect waves-light">Kanker Ganas</button>
+                              <button type="button" class="btn rounded-pill btn-danger waves-effect waves-light">Malignant Cancer</button>
+                            <?php endif; ?>
+                          </div>
+
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <label class="col-sm-2 form-label" for="basic-icon-default-message"> Scan Result by CNN</label>
+                      <div class="col-sm-10">
+                          <div class="d-flex align-items-start align-items-sm-center gap-4">
+                          <?php $hasil = isset($_GET['rand']) ?  rand(1,3) : $hasil ;?>
+                            <?php if($hasil==1) : ?>
+                              <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Undetected Cancer</button>
+                            <?php elseif($hasil==2) : ?>
+                              <button type="button" class="btn rounded-pill btn-warning waves-effect waves-light">Benign Cancer</button>
+                            <?php elseif($hasil==3) : ?>
+                              <button type="button" class="btn rounded-pill btn-danger waves-effect waves-light">Malignant Cancer</button>
                             <?php endif; ?>
                           </div>
 

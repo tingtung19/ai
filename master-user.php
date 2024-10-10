@@ -31,16 +31,16 @@
             <!-- Content -->
 
             <div class="card">
-                <h5 class="card-header">Data User</h5>
+                <h5 class="card-header">Data Users</h5>
                 <div class="table-responsive text-nowrap">
                   <table class="table">
                     <thead class="table-dark">
                       <tr>
-                        <th>ID User</th>
-                        <th>Nama User</th>
-                        <th>Alamat</th>
+                        <th>User ID</th>
+                        <th>User Name</th>
+                        <th>Address</th>
                         <th>TTL</th>
-                        <th>No Hp</th>
+                        <th>Phone Number</th>
                         <th>Actions</th>
                       </tr>
                     </thead>
@@ -48,13 +48,13 @@
                         <?php for ($i=0; $i < 5 ; $i++)  : ?>
                         <tr>
                             <td>3245</td>
-                            <td>Nama User A</td>
+                            <td>User Name A</td>
                             <td>Solo</td>
                             <td>Medan, 34 Januari 2015</td>
                             <td>085727757687</td>
                             <td>
-                                <a class="btn btn-sm btn-primary" href=""><i class="ri-pencil-line me-1"></i> Ubah</a>
-                                <a class="btn btn-sm btn-danger" href=""><i class="ri-delete-bin-6-line me-1"></i> Hapus</a>                            
+                                <a class="btn btn-sm btn-primary" href=""><i class="ri-pencil-line me-1"></i> Edit</a>
+                                <a class="btn btn-sm btn-danger" href=""><i class="ri-delete-bin-6-line me-1"></i> Delete</a>                            
                             </td>
                         
                         <?php endfor; ?>

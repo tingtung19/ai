@@ -31,13 +31,13 @@
             <!-- Content -->
 
             <div class="card">
-                <h5 class="card-header">Data Kriteria</h5>
+                <h5 class="card-header">Data Criteria</h5>
                 <div class="table-responsive text-nowrap">
                   <table class="table">
                     <thead class="table-dark">
                       <tr>
-                        <th>ID Kriteria</th>
-                        <th>Nama Kriteria</th>
+                        <th>Criteria ID</th>
+                        <th>Criteria Name</th>
                         <th>Actions</th>
                       </tr>
                     </thead>
@@ -45,10 +45,10 @@
                         <?php for ($i=0; $i < 5 ; $i++)  : ?>
                         <tr>
                             <td><?=$i+1; ?></td>
-                            <td>Nama Kriteria A<?=$i; ?></td>
+                            <td> Criteria Name A<?=$i; ?></td>
                             <td>
-                                <a class="btn btn-sm btn-primary" href=""><i class="ri-pencil-line me-1"></i> Ubah</a>
-                                <a class="btn btn-sm btn-danger" href=""><i class="ri-delete-bin-6-line me-1"></i> Hapus</a>                            
+                                <a class="btn btn-sm btn-primary" href=""><i class="ri-pencil-line me-1"></i> Edit</a>
+                                <a class="btn btn-sm btn-danger" href=""><i class="ri-delete-bin-6-line me-1"></i> Delete</a>                            
                             </td>
                         
                         <?php endfor; ?>
