@@ -62,11 +62,11 @@
                             <td>
                               <?php $hasil = rand(1,3);?>
                               <?php if($hasil==1) : ?>
-                                <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Kanker Tidak Terdeteksi</button>
+                                <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Undetected</button>
                               <?php elseif($hasil==2) : ?>
-                                <button type="button" class="btn rounded-pill btn-warning waves-effect waves-light">Kanker Jinak</button>
+                                <button type="button" class="btn rounded-pill btn-warning waves-effect waves-light">Benign Tumor</button>
                               <?php elseif($hasil==3) : ?>
-                                <button type="button" class="btn rounded-pill btn-danger waves-effect waves-light">Kanker Ganas</button>
+                                <button type="button" class="btn rounded-pill btn-danger waves-effect waves-light">Malignant Tumor</button>
                               <?php endif; ?>
 
                             </td>
@@ -74,11 +74,11 @@
                             <td>
                               <?php $hasil = isset($_GET['rand']) ?  rand(1,3) : $hasil ;?>
                               <?php if($hasil==1) : ?>
-                                <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Kanker Tidak Terdeteksi</button>
+                                <button type="button" class="btn rounded-pill btn-success waves-effect waves-light">Undetected</button>
                               <?php elseif($hasil==2) : ?>
-                                <button type="button" class="btn rounded-pill btn-warning waves-effect waves-light">Kanker Jinak</button>
+                                <button type="button" class="btn rounded-pill btn-warning waves-effect waves-light">Benign Tumor</button>
                               <?php elseif($hasil==3) : ?>
-                                <button type="button" class="btn rounded-pill btn-danger waves-effect waves-light">Kanker Ganas</button>
+                                <button type="button" class="btn rounded-pill btn-danger waves-effect waves-light">Malignant Tumor</button>
                               <?php endif; ?>
 
                             </td>

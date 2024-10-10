@@ -82,7 +82,7 @@ https://templatemo.com/tm-568-digimedia
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Homepage</a></li>
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#services">Profile</a></li>
               <li class="scroll-to-section"><a href="#about">Workflow</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Team</a></li>
@@ -136,8 +136,8 @@ https://templatemo.com/tm-568-digimedia
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>Profil</h6>
-            <h4>Apa itu <em>AI</em> untuk deteksi kanker</h4>
+            <h6>Profile</h6>
+            <h4>What is <em>AI</em> for cancer detection?</h4>
             <div class="line-dec"></div>
           </div>
         </div>
@@ -458,6 +458,8 @@ https://templatemo.com/tm-568-digimedia
         </div>
       </div>
     </div>
+
+    
   </div>
 
   <footer>
