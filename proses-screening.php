@@ -33,11 +33,11 @@
             <div class="col-xxl">
               <div class="card mb-6">
                 <div class="card-header d-flex align-items-center justify-content-between">
-                  <h5 class="mb-0">Cancer Detection Form</h5>
-                  <small class="text-muted float-end">Upload the patient's ultrasound image below</small>
+                  <h5 class="mb-0">Screening Form</h5>
+                  <small class="text-muted float-end"></small>
                 </div>
                 <div class="card-body">
-                  <form  action="proses-hasil-deteksi.php" method="post" enctype="multipart/form-data">
+                  <form  action="proses-deteksi.php" method="post" enctype="multipart/form-data">
                     <div class="row mb-4">
                       <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Patient Name</label>
                       <div class="col-sm-10">
@@ -51,29 +51,51 @@
                           </select>
                         </div>
                       </div>
-                    </div>     
-
-                    <div class="row mb-4">
-                      <label class="col-sm-2 form-label" for="basic-icon-default-message">Upload USG patient </br> (Front view)</label>
-                      <div class="col-sm-10">
-                        <div class="input-group input-group-merge">
-                          <input class="form-control" type="file" id="formFileMultiple" multiple="" accept="image/png, image/jpeg">
-                        </div>
-                      </div>
                     </div>
 
                     <div class="row mb-4">
-                      <label class="col-sm-2 form-label" for="basic-icon-default-message">Upload USG patient </br> (Side view)</label>
-                      <div class="col-sm-10">
-                        <div class="input-group input-group-merge">
-                          <input class="form-control" type="file" id="formFileMultiple" multiple="" accept="image/png, image/jpeg">
+                      <div class="card">
+                        <!-- Notifications -->
+                        <div class="card-body">
+                          <h5 class="mb-0">Symptoms List</h5>
+                          <span class="card-subtitle" >Please fill in according to the symptoms experienced by the patient, Score 1 -10.</span>
+                          <div class="error"></div>
                         </div>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th class="text-nowrap fw-medium">Symptoms</th>
+                                <th class="text-nowrap fw-medium ">Score</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <?php for ($i=0; $i < 5 ; $i++)  : ?>
+                              <tr>
+                                <td class="text-nowrap text-heading col-md-9">Question symptoms A</td>
+                                <td>
+                                  <div class="text-center mb-0 col-md-4">
+                                    <input class="form-control" type="number" min="1" max="10" />
+                                  </div>
+                                </td>                             
+                                
+                              </tr>
+                              <?php endfor; ?>
+                              
+                            
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /Notifications -->
+
                       </div>
-                    </div>
+                    </div>  
+                    
+                    
 
                     <div class="row justify-content-end">
                       <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary waves-effect waves-light">Proses</button>
+                        <button type="submit" class="btn btn-primary waves-effect waves-light">Next</button>
                       </div>
                     </div>
                   </form>

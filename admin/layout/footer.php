@@ -3,12 +3,8 @@
                 <div
                   class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
                   <div class="text-body mb-2 mb-md-0">
-                    ©
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>
-                    , dibangun <span class="text-danger"><i class="tf-icons ri-heart-fill"></i></span> oleh
-                    <a href="https://itda.ac.id" target="_blank" class="footer-link">ITDA Yogyakarta</a>
+                    Develop <span class="text-danger"><i class="tf-icons ri-heart-fill"></i></span> by
+                    © 2024 Research Team </br> (ITDA / Polinema / Universitas AKPRIND Indonesia).
                   </div>
                   <!-- <div class="d-none d-lg-inline-block">
                     <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>

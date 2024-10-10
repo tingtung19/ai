@@ -31,7 +31,7 @@
                     href="javascript:void(0);"
                     data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="/admin/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      <img src="admin/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end mt-3 py-2">
@@ -40,11 +40,11 @@
                         <div class="d-flex align-items-center">
                           <div class="flex-shrink-0 me-2">
                             <div class="avatar avatar-online">
-                              <img src="/admin/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="admin/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <h6 class="mb-0 small">John Doe</h6>
+                            <h6 class="mb-0 small">Administrator</h6>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
